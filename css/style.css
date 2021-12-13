@@ -1,0 +1,325 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+/* Tête de page */
+header {
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+
+header a {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header img {
+	height: 64px;
+}
+
+/* Barre de navigation */
+.navigation {
+	background-color: white;
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.navigation ul {
+	list-style-type: none;
+}
+
+.navigation li {
+	float: left;
+}
+
+.navigation li a {
+	display: block;
+	color: #5f6368;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+.navigation li a:hover{
+	color: #0d5299;
+}
+
+.navigation li .selected {
+	color: #0d5299;
+	border-bottom: 3px solid #0d5299;
+
+}
+
+@media all and (max-width : 980px) {
+	.navigation {
+        position: static;
+    }
+	
+	.navigation li {
+        float: none;
+    }
+
+	.navigation ul {
+        width: 100%;
+    }
+
+}
+
+/* Contenu de page principale */
+.section {
+	display: flex;
+	flex-direction: column;
+    background-color: rgb(223, 223, 223);
+}
+
+.section article {
+	height: 500px;
+	padding: 30px 50px 0px 50px;
+    display: flex;
+	flex-direction: column;
+	font-size: 5em;
+}
+
+.section article h2 {
+	color: white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 100%;
+}
+
+.section article a {
+    background: orange;
+    color: #fff;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 20%;
+    display: block;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    border-radius: 50px;
+}
+
+
+.section article a:hover {
+	background-color: white;
+	color: black
+}
+
+#rubrique-entreprise {
+	background-image: url("../images/entreprise-slogan.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	flex-direction: column;
+}
+
+#rubrique-objectif {
+	background-image: url("../images/objectif.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	flex-direction: column;
+}
+
+#rubrique-communication {
+	background-image: url("../images/communication.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	flex-direction: column;
+}
+
+#rubrique-legislation {
+	background-image: url("../images/legislation.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	flex-direction: column;
+}
+
+#rubrique-empreinte {
+	background-image: url("../images/empreinte.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	flex-direction: column;
+}
+
+@media all and (max-width : 980px) {
+	.section article {
+		height: 240px;
+		font-size: 3em;
+	}
+	.section article a {
+		font-size: 30%;
+		padding: 10px 5px;
+		width: 150px;
+	}
+
+}
+
+@media all and (max-width : 480px) {
+	.section article {
+		height: 140px;
+		font-size: 2em;
+	}
+	.section article a {
+		font-size: 30%;
+		padding: 10px 5px;
+		width: 150px;
+	}
+
+}
+
+
+/* Contenu des rubriques */
+
+.frame {
+	border-radius: 25px;
+}
+
+.rubrique { 
+    background-color: 	#202124;
+}
+
+.rubrique h2 {
+	color: white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 4em;
+	padding: 50px 0px 0px 10px;
+	text-align: center;
+}
+
+.rubrique article {
+    padding: 50px 100px 50px 100px;
+}
+
+.rubrique img {
+	max-width: 50%;
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	object-fit: cover;
+}
+
+.rubrique article p {
+	color: #bdc1c6;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    font-size: 150%;
+    text-align: justify;
+}
+
+.rubrique article a {
+    background: orange;
+    color: #fff;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 130%;
+    display: block;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+    width: 400px;
+    border-radius: 50px;
+}
+
+
+.rubrique article a:hover {
+	background-color: white;
+	color: black
+}
+
+@media all and (max-width: 980px) {
+
+	.rubrique article{
+		height: auto;
+		padding: 0px;
+	}
+
+	.rubrique article p {
+		width: auto;
+	}
+
+}
+
+@media all and (max-width : 480px) {
+
+	.rubrique article p {
+		text-align: initial;
+	}
+
+	.rubrique img {
+		max-width: 80%;
+	}
+
+	.rubrique h2 {
+		font-size: 2.5em;
+	}
+
+}
+
+/* Contenu de page "A propos" */
+.section-aboutus {
+    background-color: #eee;
+}
+
+.section-aboutus p {
+	color:#212121;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    font-size: 150%;
+    text-align: justify;
+}
+
+.section-aboutus ul li {
+	color:#212121;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    font-size: 150%;
+    text-align: justify;
+}
+
+.section-aboutus h2 {
+	color: #202124;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 4em;
+	padding: 50px 0px 0px 10px;
+	text-align: center;
+}
+
+@media all and (max-width: 980px) {
+	.section-aboutus h1 {
+	font-size: 3em;
+	}
+}
+
+/* Bas de page */
+footer {
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color: rgb(27, 27, 27);
+	color: lightgray;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.highlight {
+	color: rgb(95, 124, 255);
+}
